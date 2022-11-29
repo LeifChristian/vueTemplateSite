@@ -30,7 +30,7 @@
     <a href="#">Instagram</a>
   </div>
 
-  <h2 style="position: fixed; top: 9%; padding: 2%;z-index: 2000000; text-align: center;left: 50%; transform: translate(-50%, -50%); ">Leif Christian</h2> <br>
+  <h2 id="myName" style="">Leif Christian</h2> <br>
   <div v-if="Home">  <HomeView></HomeView> </div>
     <div v-if="About">  <AboutView></AboutView></div>
       <div v-if="News">  <NewsView></NewsView></div>
@@ -146,6 +146,8 @@
 
   /* side nav below ---------- */
 
+  #myName {position: fixed; top: 9%; padding: 2%;z-index: 2000000; text-align: center;left: 50%; transform: translate(-50%, -50%); }
+
   a:link { text-decoration: none; }
 
 a:visited { text-decoration: none; color: inherit}
@@ -171,7 +173,7 @@ a:active { text-decoration: none; }
   .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 2vw;
     color: white;
     display: block;
   }
@@ -192,6 +194,25 @@ a:active { text-decoration: none; }
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+
+  @media screen and (max-width: 1055px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    .vue-flux {width: 80vw; margin: auto; margin-top: 10vh}
+  }
+
+  @media screen and (max-width: 1055px) {
+    .navContainer {padding-top: 15px; width: 60vw}
+
+    .sidenav a {font-size: 18px;}
+   
+  }
+
+  @media screen and (max-width: 373px) {
+#myName {display: none}
+   
+  }
+
 
 
   .bottomSidenav {
