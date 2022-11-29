@@ -133,7 +133,7 @@
   }
 
   .navContainer { opacity: 0.6;
-    position: fixed; top: 6%; width: 80%; height: 8%; background: black; border-radius: 2rem; color: white; font-weight: 900;
+    position: fixed; top: 6%; width: 80%; height: 6%; background: black; border-radius: 2rem; color: white; font-weight: 900;
     left: 50%; transform: translate(-50%, -50%); z-index: 2000000;
 
   }
@@ -146,7 +146,7 @@
 
   /* side nav below ---------- */
 
-  #myName {position: fixed; top: 9%; padding: 2%;z-index: 2000000; text-align: center;left: 50%; transform: translate(-50%, -50%); }
+  #myName {position: fixed; top: 10%; padding: 2%;z-index: 2000000; text-align: center;left: 50%; transform: translate(-50%, -50%); }
 
   a:link { text-decoration: none; }
 
@@ -211,7 +211,7 @@ opacity: 0.9;
 
   @media screen and (max-width: 373px) {
   #myName {display: none}
-   
+   .navItemList {font-size: 6vw;}
   }
 
   .bottomSidenav {
