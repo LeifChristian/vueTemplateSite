@@ -5,7 +5,6 @@
     <a href="#Home" @click="clicked('Home')">Home</a><a href="#About" @click="clicked('About')">About</a><a href="#News" @click="clicked('News')">News</a></div>
   </nav>
 
-  
   <video
   className="fullscreen-video"
   id="myVideo"
@@ -31,17 +30,15 @@
     <a href="#">Instagram</a>
   </div>
 
-  <h2 style="position: fixed; top: 8%; padding: 2%;z-index: 2000000; text-align: center;left: 50%; transform: translate(-50%, -50%); ">Leif Christian</h2> <br>
+  <h2 style="position: fixed; top: 9%; padding: 2%;z-index: 2000000; text-align: center;left: 50%; transform: translate(-50%, -50%); ">Leif Christian</h2> <br>
   <div v-if="Home">  <HomeView></HomeView> </div>
     <div v-if="About">  <AboutView></AboutView></div>
       <div v-if="News">  <NewsView></NewsView></div>
-
   </div>
   
 </template>
 
   <script>
-
   import { loremIpsum } from "lorem-ipsum";
   import HomeView from "./views/HomeView.vue"
   import AboutView from "./views/AboutView.vue"
@@ -134,31 +131,27 @@
     box-shadow: 0 0 12px 0px rgba(29, 114, 198, 0.85); 
   }
 
-  .navContainer {
-
-    position: fixed; top: 6%; width: 80%;background: rgba(29, 114, 198, 0.85); border-radius: 2rem; color: greenyellow; font-weight: 900;
+  .navContainer { opacity: 0.6;
+    position: fixed; top: 6%; width: 80%; background: black; border-radius: 2rem; color: white; font-weight: 900;
     left: 50%; transform: translate(-50%, -50%); z-index: 200000;
+    opacity: 0.8=9;
   }
 
-  .navContainer a:hover {color: magenta}
+  .navContainer a:hover {color: magenta;}
 
-  .navItemList {
-    flex-wrap: wrap; display: flex; flex-direction: row; list-style: none;  text-align: center; margin: auto; gap: 20px;justify-content: center;
+  .navItemList { font-size: 1.4rem; opacity: 1;
+    flex-wrap: wrap; display: flex; flex-direction: row; padding: 8px;list-style: none;  text-align: center; margin: auto; gap: 20px;justify-content: center;
   }
 
   /* side nav below ---------- */
 
   a:link { text-decoration: none; }
 
-
 a:visited { text-decoration: none; color: inherit}
-
 
 a:hover { text-decoration: none; }
 
-
 a:active { text-decoration: none; }
-
 
   .sidenav {
     height: 25%; /* Full-height: remove this if you want "auto" height */
@@ -224,6 +217,5 @@ a:active { text-decoration: none; }
   .bottomSidenav a:hover {
     color: magenta;
   }
-  
 
   </style>
