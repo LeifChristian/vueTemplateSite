@@ -157,10 +157,11 @@ a:hover { text-decoration: none; }
 a:active { text-decoration: none; }
 
   .sidenav {
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-
+   /* Full-height: remove this if you want "auto" height */
+border-radius: 1em;
+opacity: 0.9;
     z-index: 800000000000; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    position: absolute; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
@@ -209,11 +210,9 @@ a:active { text-decoration: none; }
   }
 
   @media screen and (max-width: 373px) {
-#myName {display: none}
+  #myName {display: none}
    
   }
-
-
 
   .bottomSidenav {
     display: none;
