@@ -112,7 +112,7 @@
 
   body {background: black; color: white}
   #app2 {
-    max-width: 800px;
+  
     margin:  auto;
   }
   
@@ -129,12 +129,13 @@
   .vue-flux {
     border-radius: 2em;
     box-shadow: 0 0 12px 0px rgba(29, 114, 198, 0.85); 
+    z-index: 300000000;
   }
 
   .navContainer { opacity: 0.6;
-    position: fixed; top: 6%; width: 80%; background: black; border-radius: 2rem; color: white; font-weight: 900;
-    left: 50%; transform: translate(-50%, -50%); z-index: 200000;
-    opacity: 0.8=9;
+    position: fixed; top: 6%; width: 80%; height: 8%; background: black; border-radius: 2rem; color: white; font-weight: 900;
+    left: 50%; transform: translate(-50%, -50%); z-index: 2000000;
+
   }
 
   .navContainer a:hover {color: magenta;}
@@ -154,22 +155,23 @@ a:hover { text-decoration: none; }
 a:active { text-decoration: none; }
 
   .sidenav {
-    height: 25%; /* Full-height: remove this if you want "auto" height */
-    width: 9%; /* Set the width of the sidebar */
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+
+    z-index: 800000000000; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
     background-color: black; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
+    padding-top: 10px;
   }
   
   /* The navigation menu links */
   .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 1rem;
     color: white;
     display: block;
   }
@@ -193,15 +195,17 @@ a:active { text-decoration: none; }
 
 
   .bottomSidenav {
+    display: none;
     height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 9%; /* Set the width of the sidebar */
+    width: 12%; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
-    top: 70%; /* Stay at the top */
-    left: 91%;
+ /* Stay at the top */
+    padding-top: 30%;
+    left: 89%;
     background-color: black; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
+   
   }
   
   /* The navigation menu links */
