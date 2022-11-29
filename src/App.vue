@@ -5,6 +5,18 @@
     <a href="#Home" @click="clicked('Home')">Home</a><a href="#About" @click="clicked('About')">About</a><a href="#News" @click="clicked('News')">News</a></div>
   </nav>
 
+  
+  <video
+  className="fullscreen-video"
+  id="myVideo"
+  autoPlay="autoPlay"
+  muted
+  loop
+>
+  <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" />
+  Your browser does not support the video tag.
+</video>
+
   <div class="sidenav">
     <a href="#">Music</a>
     <a href="#">JavaScript</a>
@@ -19,16 +31,14 @@
     <a href="#">Instagram</a>
   </div>
 
-  <h1 style="margin-top: 5%; margin-bottom: -4%;    text-align: center;
-  line-height: 150%;">Leif Christian</h1>
+  <h2 style="position: fixed; top: 8%; padding: 2%;z-index: 2000000; text-align: center;left: 50%; transform: translate(-50%, -50%); ">Leif Christian</h2> <br>
   <div v-if="Home">  <HomeView></HomeView> </div>
     <div v-if="About">  <AboutView></AboutView></div>
       <div v-if="News">  <NewsView></NewsView></div>
-      
+
   </div>
   
 </template>
-
 
   <script>
 
@@ -36,7 +46,8 @@
   import HomeView from "./views/HomeView.vue"
   import AboutView from "./views/AboutView.vue"
   import NewsView from "./views/NewsView.vue"
-  
+  import './Extra.css';
+
   export default {
     name: "App",
     components: {
@@ -87,7 +98,6 @@
             return;
         }
         
-        
       },
 
       loremIpsum() {
@@ -97,7 +107,6 @@
         });
       },
 
-     
     },
   };
   </script>
